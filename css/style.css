@@ -1,0 +1,164 @@
+/* main rules  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 1.4rem;
+}
+a {
+    text-decoration: none;
+}
+.nav-link:hover {
+    background-color:var(--first-color) !important;
+}
+.active {
+    background-color:var(--first-color) !important;
+}
+:root {
+    --first-color:#34da34;
+    --sec-color:#7a39db8a;
+}
+.bg-first-color{
+    background-color:var(--first-color);
+    
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #7a39db8a;
+}
+.color {
+    color:var(--first-color);
+}
+/* end main rules  */
+/* start landing-page */
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/img/s.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Medium */
+@media (min-width: 992px) {
+    .landing {
+        background-position:unset;
+    }
+  }
+.landing-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* end start landing-page */
+
+/* start services  */
+#services{
+    width:100vw;
+    min-height: 500px;
+    /* background-color: #dddddd4a; */
+}
+#Services img {
+    width: 45px;
+    margin: 20px;
+}
+
+/* end  services  */
+
+/* start  mystory  */
+#my-story {
+    width: 100vw;
+    height: 400px;
+}
+#my-story img {
+    width: 100vw !important;
+    height: 400px !important;
+}
+#my-story .bg {
+    width: 100vw;
+    height: 400px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #7a39db5e;
+}
+/* end  mystory  */
+
+/* start my skills */
+.cir {
+    width: 30px;
+    height: 40px;
+    border: 3px solid #080;
+    border-radius: 50%;
+    text-align: center;
+}
+.p-html {
+    width: 50% !important;
+}
+.p-js {
+    width: 40% !important;
+}
+.p-css {
+    width: 65% !important;
+}
+.p-xd {
+    width: 80% !important;
+}
+
+/* end my skills */
+/* start my portifolio */
+.port-container {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+.port-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 35px;
+}
+.port-container ul li {
+    width: 100px;
+    padding: 5px;
+    
+}
+ul li:hover {
+    background-color: #7221eb;
+    color: #fff;
+    cursor: pointer;
+}
+.cards {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border:2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cards img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+.cards img:hover {
+    transform:rotate(360deg);
+    transition: all 1s ease-in-out;
+} 
+.act{
+    background-color:#7221eb;
+    color: #fff;
+}
+/* end my portfolio  */
